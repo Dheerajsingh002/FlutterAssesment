@@ -19,32 +19,34 @@ class _Screen9State extends State<Screen9> {
       // ignore: prefer_const_literals_to_create_immutables
       children: [
         Padding(padding: EdgeInsets.all(50)),
-        Center(child: Text("Login",style: TextStyle(color: Colors.blue,fontSize: 40,fontWeight: FontWeight.bold),)),
+        Center(child: Text("Login",style: TextStyle(color: Colors.white,fontSize: 40,fontWeight: FontWeight.bold),)),
   
       // ignore: prefer_const_constructors
       TextField(
+        style: TextStyle(color: Colors.white),
         controller: _name,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.person,size:20,color:Colors.black),
+                  prefixIcon: Icon(Icons.person,size:20,color:Colors.white),
                   labelText: "Student name",
-                  labelStyle: TextStyle(color:Colors.black),
+                  labelStyle: TextStyle(color:Colors.white),
                   hintText: "Enter your name",
                   errorText: _name.text.isEmpty?"Enter your name":null,
-                  hintStyle: TextStyle(color:Colors.black),
+                  hintStyle: TextStyle(color:Colors.white),
                   border: UnderlineInputBorder(
                     borderRadius: BorderRadius.circular(10)
                   )
                 ),
               ),
            TextField(
+            style: TextStyle(color: Colors.white),
                 controller:_email,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.person,size:20,color:Colors.black),
+                  prefixIcon: Icon(Icons.person,size:20,color:Colors.white),
                   labelText: "EmailID",
-                  labelStyle: TextStyle(color:Colors.black),
+                  labelStyle: TextStyle(color:Colors.white),
                   hintText: "Enter your EmailID",
                   errorText: _name.text.isEmpty?"Enter your email":null,
-                  hintStyle: TextStyle(color:Colors.black),
+                  hintStyle: TextStyle(color:Colors.white),
                   border: UnderlineInputBorder(
                     borderRadius: BorderRadius.circular(10)
                   )
@@ -63,7 +65,7 @@ class _Screen9State extends State<Screen9> {
               }));
             });
           }, child:Text("Login",style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold) ,),
-          style:ElevatedButton.styleFrom(primary: Color.fromARGB(255, 80, 13, 92)),)
+          style:ElevatedButton.styleFrom(primary: Color.fromARGB(255, 203, 169, 15)),)
 
               ),
              
